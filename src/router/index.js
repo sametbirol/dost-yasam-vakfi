@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Cities from '../pages/TypeAhead/Cities.vue'
+import AboutUs from '../views/AboutUs.vue'
 import ErrorPage from '../pages/Error.vue'
 
 const routes = [
@@ -10,14 +10,14 @@ const routes = [
       component: HomeView
    },
    {
-      path: '/typeahead',
-      name: 'cities',
-      component: Cities
-   },
-   {
       path: '/:catchALl(.*)',
       name: 'ErrorPage',
       component: HomeView
+   },
+   {
+      path: '/hakkımızda',
+      name: 'About',
+      component: AboutUs
    },
 ]
 

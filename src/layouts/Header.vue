@@ -1,34 +1,39 @@
 <template>
     <div class="header">
-        <RouterLink to="/">Home</RouterLink>
-        <div>
-            <img v-for="logo in logos" :key="logo" :src="logo"/>
+        <div class="wrapper">
+            <MediaLogo></MediaLogo>
+            <RouterLink to="/">Anasayfa</RouterLink>
+            <RouterLink to="/hakkımızda">Hakkımızda</RouterLink>
         </div>
+
     </div>
 </template>
 <script setup>
-import {reactive} from 'vue'
-import * as Logos from '@/assets/header/logos';
-import MediaLogo from '../components/MediaLogo.vue';
-const logos = reactive({...Object.values(Logos)})
-
+import MediaLogo from '@/components/MediaLogo.vue'
 </script>
 
 
 
 <style scoped>
-.header{
+.header {
     width: 100%;
-    display:flex;
-    justify-content: flex-start;
-    gap:20px;
+    display: flex;
+    justify-content: center;
     /* height: 200px; */
     background-color: antiquewhite;
+
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
     align-items: center;
 }
-.header > *{
+
+.wrapper>* {
     padding: 8px;
     margin: 16px;
 }
-
 </style>
