@@ -1,16 +1,17 @@
 <template>
   <div id="footer">
     <footer>
+      <p>
+        Bu sitenin içeriği ziyaretçilerini bilgilendirmeye
+        yönelik hazırlanmış olup tıbbi teşhis, tedavi veya reçete bilgisi özelliği taşımaz.
+      </p>
       <div>
         © 2022 Copyright
       </div>
-      <p>
-      Bu sitenin içeriği ziyaretçilerini bilgilendirmeye 
-      yönelik hazırlanmış olup tıbbi teşhis, tedavi veya reçete bilgisi özelliği taşımaz.
-    </p>
-      
+
+
     </footer>
-    
+
   </div>
 </template>
   
@@ -28,10 +29,12 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
-#footer{
-  width:100%;
+
+#footer {
+  width: 100%;
 
 
 }
