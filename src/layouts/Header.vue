@@ -37,4 +37,39 @@ import MediaLogo from '@/components/MediaLogo.vue'
     padding: 8px;
     margin: 16px;
 }
-</style>
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .wrapper {
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .wrapper {
+        gap: 0;
+        width:95%;
+    }
+
+    .wrapper>a {
+        font-size: 16px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .wrapper {
+        gap: 0;
+        width:99%;
+    }
+
+    .wrapper>a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}</style>

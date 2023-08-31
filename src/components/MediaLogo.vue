@@ -16,19 +16,39 @@
 <style scoped>
 .logos {
     display: flex;
-    gap:20px;
+    gap: 20px;
     flex: 1;
 }
-.logos >img{
-    width:24px;
+
+.logos>img {
+    width: 24px;
     height: 24px;
 }
-.logos >a{
-    padding:0;
-    margin:0;
+
+.logos>a {
+    padding: 0;
+    margin: 0;
     display: flex;
 }
-.logos > a:hover{
+
+.logos>a:hover {
     background: none;
 }
-</style>
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .logos>a>img {
+        width: 18px;
+        height: 18px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .logos>a>img {
+        width: 12px;
+        height: 12px;
+    }
+
+}</style>
