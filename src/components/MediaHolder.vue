@@ -1,11 +1,127 @@
 <template>
     <div class="media">
-        <slot></slot>
+        <div class="wrapper">
+            <div class="header">
+                <slot name="header"></slot>
+            </div>
+            <div class="routers" ref="hello">
+                <slot name="router"></slot>
+            </div>
+        </div>
     </div>
 </template>
+<script setup>
+import { ref, onMounted } from 'vue';
+const props = defineProps({
+    image: String
+})
+const hello = ref(null)
+onMounted(() => {
+    console.log(hello.value)
+})
+</script>
 <style scoped>
-.media{
-    height:400px ;
+:slotted(.inline) {
+    transition: 300ms;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+
+:slotted(.inline):hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+:slotted(.disabled) {
+    pointer-events: none;
+}
+
+:slotted(.disabled),
+:slotted(.inline) {
+    font-size: 20px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 16px;
+    }
+    :slotted(.title){
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 12px;
+    }
+    :slotted(.title){
+        font-size: 20px;
+    }
+
+    
+
+}
+
+@media (max-width: 767px) {
+
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 12px;
+    }
+    :slotted(.title){
+        font-size: 16px;
+    }
+
+}
+
+.media {
+    display: inline-block;
+    display: inline-block;
+    color: #fff;
+    position: relative;
     width: 100%;
+    height: 200px;
+    padding: 10px;
+    background: v-bind("props.image") no-repeat center center;
+}
+
+.media:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(100%); */
+}
+
+.header {
+    color: white;
+}
+
+.routers {
+    background: black;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
 }
 </style>
