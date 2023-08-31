@@ -4,8 +4,9 @@
             <MediaLogo></MediaLogo>
             <RouterLink to="/">Anasayfa</RouterLink>
             <RouterLink to="/hakkımızda">Hakkımızda</RouterLink>
+            <RouterLink to="/bilgi-kösesi">Bilgi Köşesi</RouterLink>
+            <RouterLink to="/bagis-yap">Destek / Bağış</RouterLink>
         </div>
-
     </div>
 </template>
 <script setup>
