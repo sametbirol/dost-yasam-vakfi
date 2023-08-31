@@ -28,4 +28,7 @@
     margin:0;
     display: flex;
 }
+.logos > a:hover{
+    background: none;
+}
 </style>
