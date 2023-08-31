@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutUs from '../views/AboutUs.vue'
+import AboutView from '../views/AboutView.vue'
+import InformationView from '../views/InformationView.vue'
+import DonationView from '../views/DonationView.vue'
 import ErrorPage from '../pages/Error.vue'
 
 const routes = [
@@ -17,7 +19,17 @@ const routes = [
    {
       path: '/hakkımızda',
       name: 'About',
-      component: AboutUs
+      component: AboutView
+   },
+   {
+      path: '/bilgi-kösesi',
+      name: 'Information',
+      component: InformationView
+   },
+   {
+      path: '/bagis-yap',
+      name: 'Donation',
+      component: DonationView
    },
 ]
 
