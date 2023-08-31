@@ -40,55 +40,20 @@ onMounted(() => {
 :slotted(.disabled),
 :slotted(.inline) {
     font-size: 20px;
+    margin: 5px;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
 
-    :slotted(.disabled),
-    :slotted(.inline) {
-        font-size: 16px;
-    }
-    :slotted(.title){
-        font-size: 26px;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    :slotted(.disabled),
-    :slotted(.inline) {
-        font-size: 12px;
-    }
-    :slotted(.title){
-        font-size: 20px;
-    }
-
-    
-
-}
-
-@media (max-width: 767px) {
-
-    :slotted(.disabled),
-    :slotted(.inline) {
-        font-size: 12px;
-    }
-    :slotted(.title){
-        font-size: 16px;
-    }
-
-}
 
 .media {
-    display: inline-block;
-    display: inline-block;
     color: #fff;
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     padding: 10px;
-    background: v-bind("props.image") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-image: v-bind("props.image");
 }
 
 .media:before {
@@ -121,7 +86,58 @@ onMounted(() => {
 .routers {
     background: black;
     border-radius: 5px;
-    padding: 5px;
     color: white;
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+:slotted(.disabled),
+:slotted(.inline) {
+    font-size: 16px;
+}
+
+:slotted(.title) {
+    font-size: 26px;
+}
+
+.media {
+    height: 180px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+:slotted(.disabled),
+:slotted(.inline) {
+    font-size: 12px;
+}
+
+:slotted(.title) {
+    font-size: 20px;
+}
+
+.media {
+    height: 160px;
+}
+
+
+
+}
+
+@media (max-width: 767px) {
+
+:slotted(.disabled),
+:slotted(.inline) {
+    font-size: 12px;
+}
+
+:slotted(.title) {
+    font-size: 16px;
+}
+
+.media {
+    height: 140px;
+}
+
 }
 </style>
