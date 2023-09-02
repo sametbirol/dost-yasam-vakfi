@@ -1,12 +1,10 @@
 <template>
     <div class="media">
-        <div class="wrapper">
-            <div class="header">
-                <slot name="header"></slot>
-            </div>
-            <div class="routers" ref="hello">
-                <slot name="router"></slot>
-            </div>
+        <div class="header">
+            <slot name="header"></slot>
+        </div>
+        <div class="routers" ref="hello">
+            <slot name="router"></slot>
         </div>
     </div>
 </template>
@@ -54,31 +52,24 @@ onMounted(() => {
     background-size: cover;
     background-position: center;
     background-image: v-bind("props.image");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .media:before {
     content: "";
     display: block;
     position: absolute;
+    z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
 }
-
-.wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* filter: brightness(100%); */
-}
-
 .header {
     color: white;
 }
@@ -88,37 +79,41 @@ onMounted(() => {
     border-radius: 5px;
     color: white;
 }
+.header,.routers{
+    z-index: 2;
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-:slotted(.disabled),
-:slotted(.inline) {
-    font-size: 16px;
-}
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 16px;
+    }
 
-:slotted(.title) {
-    font-size: 26px;
-}
+    :slotted(.title) {
+        font-size: 26px;
+    }
 
-.media {
-    height: 180px;
-}
+    .media {
+        height: 180px;
+    }
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-:slotted(.disabled),
-:slotted(.inline) {
-    font-size: 12px;
-}
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 12px;
+    }
 
-:slotted(.title) {
-    font-size: 20px;
-}
+    :slotted(.title) {
+        font-size: 20px;
+    }
 
-.media {
-    height: 160px;
-}
+    .media {
+        height: 160px;
+    }
 
 
 
@@ -126,18 +121,18 @@ onMounted(() => {
 
 @media (max-width: 767px) {
 
-:slotted(.disabled),
-:slotted(.inline) {
-    font-size: 12px;
-}
+    :slotted(.disabled),
+    :slotted(.inline) {
+        font-size: 12px;
+    }
 
-:slotted(.title) {
-    font-size: 16px;
-}
+    :slotted(.title) {
+        font-size: 16px;
+    }
 
-.media {
-    height: 140px;
-}
+    .media {
+        height: 140px;
+    }
 
 }
 </style>
