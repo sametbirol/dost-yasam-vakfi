@@ -2,7 +2,8 @@
     <div class="hero">
         <div class="hero-wrapper">
             <h2 class="header">Be the change</h2>
-            <p class="info">Your donations can make a world of difference in the lives of people with Down Syndrome. It doesn’t just help
+            <p class="info">Your donations can make a world of difference in the lives of people with Down Syndrome. It
+                doesn’t just help
                 improve their quality of life – it opens up possibilities they never knew they had!</p>
             <div class="stats">
                 <div>
@@ -42,9 +43,9 @@ const animateValue = (obj, start, end, duration) => {
     };
     window.requestAnimationFrame(step);
 }
-animateValue(families,0,FAMILY_LIMIT,1000)
-animateValue(programs,0,PROGRAMS_LIMIT,1000)
-animateValue(funds,0,FUNDS_LIMIT,1000)
+animateValue(families, 0, FAMILY_LIMIT, 1000)
+animateValue(programs, 0, PROGRAMS_LIMIT, 1000)
+animateValue(funds, 0, FUNDS_LIMIT, 1000)
 </script>
 <style scoped>
 .hero {
@@ -66,41 +67,41 @@ animateValue(funds,0,FUNDS_LIMIT,1000)
     flex-wrap: wrap;
     gap: 30px;
     color: aliceblue;
-    padding: 40px ;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.stats{
+
+.stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    gap: 10px;
 }
-.stats h3{
+
+.stats h3 {
     font-size: 40px;
     font-weight: 800;
 }
-.header{
+
+.header {
     font-size: 64px;
     font-weight: 700;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
-    .grid {
-        height: 330px;
-        width: 330px;
-        gap: 15px;
-    }
-
-    .head {
-        align-items: center;
-    }
-
-    .head .header {
-        font-size: 70px;
-    }
-
     .hero-wrapper {
-        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .stats h3 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .header {
+        font-size: 48px;
+        font-weight: 700;
     }
 
 
@@ -108,44 +109,36 @@ animateValue(funds,0,FUNDS_LIMIT,1000)
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    .grid {
-        height: 290px;
-        width: 290px;
-        gap: 10px;
-    }
-
-    .head {
-        align-items: center;
-    }
-
-    .head .header {
-        font-size: 60px;
-    }
-
     .hero-wrapper {
-        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .stats h3 {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    .header {
+        font-size: 40px;
+        font-weight: 700;
     }
 
 }
 
 @media (max-width: 767px) {
 
-    .grid {
-        height: 260px;
-        width: 260px;
-        gap: 10px;
-    }
-
-    .head {
-        align-items: center;
-    }
-
-    .head .header {
-        font-size: 50px;
-    }
-
     .hero-wrapper {
-        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .stats h3 {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    .header {
+        font-size: 40px;
+        font-weight: 700;
     }
 
 }
