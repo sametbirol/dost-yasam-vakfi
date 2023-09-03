@@ -1,5 +1,5 @@
 <template>
-    <button class="btn">
+    <button class="btn" @click="handleScrollDown">
         <slot>Donate Now</slot>
     </button>
 </template>
@@ -14,6 +14,9 @@ const props = defineProps({
         default: "white"
     }
 })
+const handleScrollDown = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+}
 </script>
 <style scoped>
 .btn {
