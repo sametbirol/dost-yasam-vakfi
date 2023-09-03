@@ -84,7 +84,7 @@ const handleUpdate = () => {
         height: 150px;
         width: 250px;
     }
-    .bank{
+    .bank,.modal{
         height: 150px;
         font-size: 24px;
     }
@@ -94,7 +94,7 @@ const handleUpdate = () => {
     .image{
         height: 140px;
     }
-    .bank{
+    .bank,.modal{
         height: 120px;
         
     }
@@ -110,7 +110,7 @@ const handleUpdate = () => {
     .divider,.bank-name{
         display: none;
     }
-    .bank{
+    .bank,.modal{
         height: 90px;
         font-size: 16px;
         /* width: 200px; */
