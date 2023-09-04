@@ -6,17 +6,15 @@
                 Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
                 Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
                 Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
-                Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
             </p>
         </div>
     </div>
 </template>
 <script setup>
-import DonationButton from '../Donation/DonationButton.vue';
 </script>
 <style scoped>
 .text {
-    font-size: var(--base-subheader-size);
+    font-size: var(--subheader-size-medium);
 
 }
 

@@ -10,11 +10,11 @@ import ActivityProfile from './ActivityProfile.vue';
 const objs = [
     {
         activityName : "Mutlu Anılar",
-        description : "Down sendromlu bireylerle eğlenerek özel anılar biriktiriyoruz.",
+        description : "Çocuklarımızla eğlenerek özel anılar biriktiriyoruz.",
     },
     {
         activityName : "Yetenekleri Keşfet",
-        description : "Bireylerin potansiyelini ortaya çıkaran, onları cesaretlendiren etkinlikler düzenliyoruz."
+        description : "Çocuklarımızın potansiyelini ortaya çıkaran, onları cesaretlendiren etkinlikler düzenliyoruz."
     },
     {
         activityName : "Yetenekleri Keşfet",
@@ -28,16 +28,17 @@ const objs = [
 </script>
 <style scoped>
 .wrapper{
-    padding: 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--blue-lighten-1);
+    padding: 120px;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-
+    width: 1040px;
     justify-content: flex-start;
     align-items: flex-start;
     gap:40px;
