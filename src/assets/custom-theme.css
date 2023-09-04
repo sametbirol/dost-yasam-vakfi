@@ -1,6 +1,52 @@
-/* custom-theme.css */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #e74c3c;
-  }
-  
+    /* Color Palette*/
+    --primary-color: #37d6eb;
+    --secondary-color: #f66209;
+    --light-color: #c5cdbf;
+    --white-color: #fdfdfe;
+    --dark-color: #434447;
+    --info-color: #fdbd3a;
+    --success-color: #37aba0;
+    --warning-color: #c1dbeb;
+    --danger-color: #efa7b3;
+    --blue-lighten-1: #c4e2ff;
+    --blue-lighten-2: #a3caee;
+    --blue-lighten-3: #006daa;
+    --blue-darken-1: #0353a4;
+    --blue-darken-2: #003559;
+    --blue-darken-3: #061a40;
+    --pink-pastel-color: #e29578;
+    
+
+    /* Base Font Sizes */
+    --base-font-size-small: 14px;
+    --base-font-size-medium: 16px;
+    --base-font-size-large: 18px;
+    --base-font-size-xl: 20px;
+
+    /* Font Sizes */
+    --font-size-small: var(--base-font-size-small);
+    --font-size-medium: var(--base-font-size-medium);
+    --font-size-large: var(--base-font-size-large);
+    --font-size-xl: var(--base-font-size-xl);
+    --base-font-size: var(--font-size-xl);
+
+    /* Header Sizes */
+    --header-size-small: calc(var(--base-font-size-small) * 4.5);
+    --header-size-medium: calc(var(--base-font-size-medium) * 4.5);
+    --header-size-large: calc(var(--base-font-size-large) * 4.5);
+    --header-size-xl: calc(var(--base-font-size-xl) * 4.5);
+    --base-header-size: var(--header-size-xl);
+
+    /* Subheader Sizes */
+    --subheader-size-small: calc(var(--base-font-size-small) * 2.5);
+    --subheader-size-medium: calc(var(--base-font-size-medium) * 2.5);
+    --subheader-size-large: calc(var(--base-font-size-large) * 2.5);
+    --subheader-size-xl: calc(var(--base-font-size-xl) * 2.5);
+    --base-subheader-size: var(--subheader-size-xl);
+    /* Breakpoints */
+    --small-screen: 480px;
+    --medium-screen: 768px;
+    --large-screen: 1024px;
+    --extra-large-screen: 1280px;
+}
