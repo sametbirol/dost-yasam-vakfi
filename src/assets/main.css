@@ -1,4 +1,7 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 #app {
   display: flex;
