@@ -44,7 +44,7 @@ const handleUpdate = () => {
     background-color: white;
     border-radius: 100px;
     overflow: hidden;
-    background-color: var(--primary-color);
+    background-color: var(--pink-pastel-color);
 }
 .image{
     height: 200px;
