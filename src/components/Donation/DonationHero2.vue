@@ -1,22 +1,20 @@
 <template>
     <div class="hero">
         <div class="hero-wrapper">
-            <h2 class="header">Be the change</h2>
-            <p class="info">Your donations can make a world of difference in the lives of people with Down Syndrome. It
-                doesn’t just help
-                improve their quality of life – it opens up possibilities they never knew they had!</p>
+            <h2 class="header">Değişime Sebep Ol</h2>
+            <p class="info">"Bağışlarınız, Down Sendromlu insanların hayatlarında büyük bir fark yaratabilir. Sadece yaşam kalitelerini artırmakla kalmaz, aynı zamanda sahip olduklarıni bile bilmedikleri olanakları sağlar!"</p>
             <div class="stats">
                 <div>
                     <h3>{{ families }}</h3>
-                    <p>Families Supported</p>
+                    <p>Aileye yardım edildi</p>
                 </div>
                 <div>
                     <h3>{{ programs }}</h3>
-                    <p>Programs Funded</p>
+                    <p>Program başarıya ulaştı</p>
                 </div>
                 <div>
                     <h3>{{ funds }}</h3>
-                    <p>Dollars raised</p>
+                    <p>Türk lirası toplandı</p>
                 </div>
             </div>
         </div>
@@ -39,6 +37,9 @@ const animateValue = (obj, start, end, duration) => {
         obj.value = Math.floor(progress * (end - start) + start);
         if (progress < 1) {
             window.requestAnimationFrame(step);
+        }
+        else{
+            obj.value += "+"
         }
     };
     window.requestAnimationFrame(step);

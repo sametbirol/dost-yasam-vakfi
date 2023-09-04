@@ -2,8 +2,8 @@
     <div class="hero">
         <div class="hero-wrapper">
             <div class="head">
-                <h2 class="header">Join US</h2>
-                <DonationButton color="white" bgcolor="black" />
+                <h2 class="header">Bize KATIL</h2>
+                <DonationButton color="white" bgcolor="black" >Bağış Yap</DonationButton>
             </div>
             <div class="grid">
                 <div class="content bottom-left-long top-right-long col-span-2"></div>
