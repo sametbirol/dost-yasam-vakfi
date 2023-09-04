@@ -4,7 +4,6 @@
     <AboutUsFounders></AboutUsFounders>
     <AboutUsActivities></AboutUsActivities>
     <AboutUsFAQ></AboutUsFAQ>
-    ,
 </template>
 <script setup>
 import AboutUsHero from '../components/AboutUs/AboutUsHero.vue';
