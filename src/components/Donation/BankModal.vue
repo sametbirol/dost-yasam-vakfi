@@ -24,12 +24,9 @@ const props = defineProps({
         default: false
     }
 })
-const modal = ref(null)
 const modalVal = ref(props.modal)
 const handleUpdate = () => {
     modalVal.value = !modalVal.value
-    modal.value.classList = modal.value.classList == "modal" ? "modal active" : "modal";
-    console.log(modal.value.classList)
 }
 </script>
 <style scoped>
@@ -44,7 +41,7 @@ const handleUpdate = () => {
     background-color: white;
     border-radius: 100px;
     overflow: hidden;
-    background-color: var(--pink-pastel-color);
+    background-color: var(--blue-lighten-3);
 }
 .image{
     height: 200px;
