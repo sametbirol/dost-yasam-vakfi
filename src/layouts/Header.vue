@@ -21,7 +21,7 @@ import MediaLogo from '@/components/MediaLogo.vue'
     display: flex;
     justify-content: center;
     /* height: 200px; */
-    background-color: antiquewhite;
+    background-color: var(--blue-lighten-2);
 
 }
 
