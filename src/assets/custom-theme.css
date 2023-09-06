@@ -2,20 +2,26 @@
     /* Color Palette*/
     --primary-color: #37d6eb;
     --secondary-color: #f66209;
-    --light-color: #c5cdbf;
+    --light-color: #EDEEEA;
     --white-color: #fdfdfe;
-    --dark-color: #434447;
+    --dark-color: #472637;
+
     --info-color: #fdbd3a;
     --success-color: #37aba0;
     --warning-color: #c1dbeb;
     --danger-color: #efa7b3;
+    --pink-pastel-color: #DA8060;
+    --pink-pastel-color-2: #EED6CE;
+    --teal-pastel-color: #006d77;
+
     --blue-lighten-1: #c4e2ff;
     --blue-lighten-2: #a3caee;
     --blue-lighten-3: #006daa;
+
     --blue-darken-1: #0353a4;
     --blue-darken-2: #003559;
     --blue-darken-3: #061a40;
-    --pink-pastel-color: #e29578;
+    
     
 
     /* Base Font Sizes */

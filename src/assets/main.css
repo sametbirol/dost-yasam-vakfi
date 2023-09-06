@@ -24,8 +24,8 @@ a,
 
 @media (hover: hover) {
   a:hover {
-    background-color: var(--pink-pastel-color);
-    color:#ffffff;
+    background-color: var(--pink-pastel-color-2);
+    color:var(--dark-color);
     
   }
 }
