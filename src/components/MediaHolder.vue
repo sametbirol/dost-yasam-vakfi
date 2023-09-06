@@ -39,6 +39,7 @@ onMounted(() => {
 :slotted(.inline) {
     font-size: 20px;
     margin: 5px;
+    color: var(--blue-lighten-1);
 }
 
 
