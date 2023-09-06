@@ -55,7 +55,7 @@ animateValue(funds, 0, FUNDS_LIMIT, 1000)
     align-items: center;
     width: 100%;
     /* height: 470px; */
-    background-color: #006d77;
+    background-color: var(--teal-pastel-color);
 }
 
 .hero-wrapper {
