@@ -16,14 +16,6 @@ const routes = [
       }
    },
    {
-      path: '/:catchALl(.*)',
-      name: 'ErrorPage',
-      component: HomeView,
-      meta : {
-         title : "Hata 404 *"
-      }
-   },
-   {
       path: '/hakkimizda',
       name: 'About',
       component: AboutView,
@@ -32,7 +24,7 @@ const routes = [
       }
    },
    {
-      path: '/bilgi-kösesi',
+      path: '/bilgi-kosesi',
       name: 'Information',
       component: InformationView,
       meta : {

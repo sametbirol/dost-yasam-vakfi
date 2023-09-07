@@ -4,7 +4,7 @@
             <MediaLogo></MediaLogo>
             <RouterLink to="/">Anasayfa</RouterLink>
             <RouterLink to="/hakkimizda">Hakkımızda</RouterLink>
-            <RouterLink to="/bilgi-kösesi">Bilgi Köşesi</RouterLink>
+            <RouterLink to="/bilgi-kosesi">Bilgi Köşesi</RouterLink>
             <RouterLink to="/bagis-yap">Destek / Bağış</RouterLink>
             <RouterLink to="/etkinliklerimiz">Etkinlik</RouterLink>
         </div>
