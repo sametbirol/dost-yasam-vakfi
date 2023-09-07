@@ -12,12 +12,13 @@
   min-height: 100vh;
 }
 
-a,
-.green {
+
+
+
+a{
   text-decoration: none;
   color: var(--blue-darken-3);
   transition: 0.4s;
-  font-size: 20px;
   border-radius: 12px;
 }
 
@@ -25,72 +26,114 @@ a,
 @media (hover: hover) {
   a:hover {
     background-color: var(--pink-pastel-color-2);
-    color:var(--dark-color);
-    
+    color: var(--dark-color);
+
   }
 }
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+
+.wrapper{
+  padding: 32px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 @media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
+  .header {
+    font-size: var(--header-size-xl);
+  }
+  .subheader {
+    font-size: var(--subheader-size-xl);
+  }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+  .footer {
+    font-size: var(--footer-size-xl)
+  }
+  .text {
+    font-size: var(--font-size-xl)
+  }
+  .container{
+    width: 80%;
+  }
+  a{
+    font-size: var(--footer-size-xl);
+  }
+
+}
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
-}
+  .header {
+    font-size: var(--header-size-large);
+  }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+  .subheader {
+    font-size: var(--subheader-size-large);
+  }
+
+  .footer {
+    font-size: var(--footer-size-large)
+  }
+  .text {
+    font-size: var(--font-size-large)
+  }
+  .container{
+    width: 85%;
+  }
+  a{
+    font-size: var(--footer-size-large);
+  }
+
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
+  .header {
+    font-size: var(--header-size-medium);
+  }
+
+  .subheader {
+    font-size: var(--subheader-size-medium);
+  }
+
+  .footer {
+    font-size: var(--footer-size-medium)
+  }
+  .text {
+    font-size: var(--font-size-medium)
+  }
+  .container{
+    width: 90%;
+  }
+  a{
+    font-size: var(--footer-size-medium);
+  }
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
+@media (max-width: 767px) {
+  .header {
+    font-size: var(--header-size-small);
+  }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
+  .subheader {
+    font-size: var(--subheader-size-small);
+  }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+  .footer {
+    font-size: var(--footer-size-small)
+  }
+  .text {
+    font-size: var(--font-size-small)
+  }
+  .container{
+    width: 95%;
+  }
+  a{
+    font-size: var(--footer-size-small);
+  }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
 }
