@@ -3,7 +3,7 @@
         <div class="container">
 
             <div class="header">Kurucular</div>
-            <div class="subheader">Dost Yaşam Vakfı'nın başarılı ve tecrübeli kurucu ekibi, fark yaratmayı hedefliyor.</div>
+            <div class="footer">"Dost Yaşam Vakfı'nın başarılı ve tecrübeli kurucu ekibi, fark yaratmayı hedefliyor."</div>
 
             <div class="founders">
                 <FounderProfile v-for="founder in founders" v-bind="founder"></FounderProfile>
@@ -134,18 +134,12 @@ const trustees = [
 ]
 </script>
 <style scoped>
-.text {
-    font-size: var(--base-subheader-size);
-
-}
-
 .header {
-    font-size: var(--header-size-large);
     font-family: "Elsie", cursive;
 }
 
-.subheader {
-    font-size: var(--subheader-size-medium);
+.footer {
+    font-style: italic;
     padding-left: 24px;
     width: 70%;
     text-align: center;
@@ -180,4 +174,5 @@ const trustees = [
     flex-wrap: wrap;
     gap: 30px;
 }
+
 </style>
