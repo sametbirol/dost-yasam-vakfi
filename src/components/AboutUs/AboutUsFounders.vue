@@ -6,37 +6,133 @@
             <div class="subheader">Dost Yaşam Vakfı'nın başarılı ve tecrübeli kurucu ekibi, fark yaratmayı hedefliyor.</div>
 
             <div class="founders">
-                <FounderProfile v-for="obj in objs" v-bind="obj"></FounderProfile>
+                <FounderProfile v-for="founder in founders" v-bind="founder"></FounderProfile>
+            </div>
+
+            <div class="header">Mütevelli Heyetimiz</div>
+            <div class="founders">
+                <TrusteesProfile v-for="trustee in trustees" v-bind="trustee"></TrusteesProfile>
             </div>
         </div>
     </div>
 </template>
 <script setup>
 import FounderProfile from './FounderProfile.vue';
+import TrusteesProfile from './TrusteesProfile.vue';
 
-const objs = [
+const founders = [
     {
-        image: "Helloo",
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
         founderName: "Samet Birol",
         role: "Sekreter"
     },
     {
-        image: "Helloo",
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
         founderName: "Samet Birol",
         role: "Sekreter"
     },
     {
-        image: "Helloo",
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
         founderName: "Samet Birol",
         role: "Sekreter"
     },
     {
-        image: "Helloo",
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
         founderName: "Samet Birol",
         role: "Sekreter"
     },
     {
-        image: "Helloo",
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    }
+]
+
+const trustees = [
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
+        founderName: "Samet Birol",
+        role: "Sekreter"
+    },
+    {
         founderName: "Samet Birol",
         role: "Sekreter"
     },
@@ -70,7 +166,7 @@ const objs = [
     /* font-family: 'Electrolize', sans-serif; */
     color: var(--blue-darken-1);
     padding: 100px 0 100px 0;
-    gap:20px;
+    gap: 20px;
 }
 
 .wrapper {
@@ -87,6 +183,6 @@ const objs = [
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
 }
 </style>
