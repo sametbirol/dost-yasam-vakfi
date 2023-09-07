@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <div class="photo"></div>
+        <img :src="props.image" class="photo">
         <div class="founderName">{{ founderNametoUpperCase }}</div>
         <div class="role">{{ roletoUpperCase }}</div>
     </div>
@@ -10,7 +10,7 @@ import { computed } from 'vue'
 const props = defineProps({
     image: {
         type: String,
-        default: "Hello"
+        default: null
     },
     founderName: String,
     role: String
@@ -42,6 +42,7 @@ const roletoUpperCase = computed(() => {
     width: 96px;
     height: 96px;
     border-radius: 48px;
+    color: white;
 }
 
 .founderName {
