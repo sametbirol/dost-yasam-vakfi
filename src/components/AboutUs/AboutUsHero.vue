@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <!-- <div class="content-wrapper"> -->
         <img src="../../assets/media/handshakelight.svg" width="64" height="64" />
         <p class="text">Dost Yaşam Vakfı, Yardım Eli
         </p>
@@ -8,7 +7,6 @@
             <DonationButton>Bağış Yap</DonationButton>
         </RouterLink>
     </div>
-    <!-- </div> -->
 </template>
 <script setup>
 import DonationButton from '../Donation/DonationButton.vue';
@@ -33,4 +31,5 @@ import DonationButton from '../Donation/DonationButton.vue';
 
 .inline {
     background-color: transparent;
-}</style>
+}
+</style>

@@ -1,7 +1,6 @@
 <template>
     <div class="media">
-        <div class="header">
-            <slot name="header"></slot>
+        <div class="header" v-html="props.header">
         </div>
         <!-- <div class="routers" ref="hello">
             <slot name="router"></slot>
@@ -10,7 +9,8 @@
 </template>
 <script setup>
 const props = defineProps({
-    image: String
+    image: String,
+    header : String
 })
 </script>
 <style scoped>
@@ -68,6 +68,7 @@ const props = defineProps({
 }
 .header {
     color: white;
+    font-family: 'Electrolize', sans-serif;
 }
 
 /* .routers {

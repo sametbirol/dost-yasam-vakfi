@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="wrapper">
+    <div class="layout">
         <RouterView></RouterView>
     </div>
     <Footer />
@@ -11,7 +11,7 @@ import Header from './Header.vue'
 import Footer from './Footer.vue'
 </script>
 <style scoped>
-.wrapper{
+.layout{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <p class="subheader">Tanıtım</p>
+            <p class="footer">Tanıtım</p>
             <p class="text">
                 Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
                 Down sendromlu bireylerin yaşamlarına dokunan, onlara destek sağlayan Dost Yaşam Vakfı sizlerle.
@@ -13,19 +13,14 @@
 <script setup>
 </script>
 <style scoped>
-.text {
-    font-size: var(--subheader-size-medium);
 
-}
 
-.subheader {
-    font-size: var(--base-font-size);
+.footer {
     padding-left: 24px;
+    font-style: italic;
 }
 
 .container {
-    width: 80%;
-    display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
@@ -36,6 +31,5 @@
 
 .wrapper {
     background-color: var(--blue-darken-3);
-    width: 100%;
 }
 </style>

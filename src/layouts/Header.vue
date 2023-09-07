@@ -1,6 +1,6 @@
 <template>
-    <div class="header">
-        <div class="wrapper">
+    <div class="wrapper">
+        <div class="header">
             <MediaLogo></MediaLogo>
             <RouterLink to="/">Anasayfa</RouterLink>
             <RouterLink to="/hakkimizda">Hakkımızda</RouterLink>
@@ -17,16 +17,12 @@ import MediaLogo from '@/components/MediaLogo.vue'
 
 
 <style scoped>
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* height: 200px; */
+.wrapper {
     background-color: var(--blue-lighten-2);
-
+    padding: 0;
 }
 
-.wrapper {
+.header {
     width: 90%;
     display: flex;
     justify-content: flex-end;
@@ -34,14 +30,14 @@ import MediaLogo from '@/components/MediaLogo.vue'
     align-items: center;
 }
 
-.wrapper>* {
+.header>* {
     padding: 8px;
     margin: 16px;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    .wrapper {
+    .header {
         gap: 10px;
     }
 
@@ -49,13 +45,13 @@ import MediaLogo from '@/components/MediaLogo.vue'
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    .wrapper {
+    .header {
         gap: 0;
         width:95%;
     }
 
-    .wrapper>a {
-        font-size: 16px;
+    .header>a {
+        padding:4px;
         margin: 0;
     }
 
@@ -63,13 +59,13 @@ import MediaLogo from '@/components/MediaLogo.vue'
 
 @media (max-width: 767px) {
 
-    .wrapper {
+    .header {
         gap: 0;
         width:99%;
     }
 
-    .wrapper>a {
-        font-size: 12px;
+    .header>a {
+        padding:4px;
         margin: 0;
     }
 

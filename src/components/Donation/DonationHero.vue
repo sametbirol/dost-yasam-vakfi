@@ -1,6 +1,6 @@
 <template>
-    <div class="hero">
-        <div class="hero-wrapper">
+    <div class="wrapper">
+        <div class="container">
             <div class="head">
                 <h2 class="header">Bize KATIL</h2>
                 <DonationButton color="white" bgcolor="black" >Bağış Yap</DonationButton>
@@ -21,33 +21,21 @@
 import DonationButton from '../Donation/DonationButton.vue';
 </script>
 <style scoped>
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.wrapper {
     height: 670px;
     background-color: var(--pink-pastel-color);
-}
+}   
 
-.hero-wrapper {
-    display: flex;
+.container {
     justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    font-size: 90px;
     flex-wrap: wrap;
     gap: 60px;
 }
 
-.head .header {
-    color: black;
+.header {
+    /* color: black; */
     font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.header {
-    font-size: 90px;
 }
 
 
@@ -130,6 +118,10 @@ import DonationButton from '../Donation/DonationButton.vue';
     background-image: url(https://media.istockphoto.com/id/482247210/tr/foto%C4%9Fraf/young-girl-smiling-on-background-of-blue-wall.jpg?s=612x612&w=0&k=20&c=XSDVKVb9wrPH9w_zz6hsmAsGJy77vwPB7YrgefsP7dw=);
 }
 
+.header {
+    font-size: var(--header-size-xl);
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
 
     .grid {
@@ -139,13 +131,8 @@ import DonationButton from '../Donation/DonationButton.vue';
     }
 
     .header {
-        font-size: var(--header-size-xl);
+        font-size: var(--header-size-large);
     }
-
-
-    
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -161,7 +148,7 @@ import DonationButton from '../Donation/DonationButton.vue';
     }
 
     .header {
-        font-size: var(--header-size-large);
+        font-size: var(--header-size-medium);
     }
 
 
@@ -184,7 +171,7 @@ import DonationButton from '../Donation/DonationButton.vue';
     }
 
     .header {
-        font-size: var(--header-size-medium);
+        font-size: var(--header-size-small);
     }
 
     .hero-wrapper {
