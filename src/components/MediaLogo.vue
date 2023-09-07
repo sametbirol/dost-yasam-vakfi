@@ -20,10 +20,10 @@
     flex: 1;
 }
 
-.logos>img {
+/* .logos>a>img {
     width: 24px;
     height: 24px;
-}
+} */
 
 .logos>a {
     padding: 0;
