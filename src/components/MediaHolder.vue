@@ -9,17 +9,12 @@
     </div>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue';
 const props = defineProps({
     image: String
 })
-const hello = ref(null)
-onMounted(() => {
-    console.log(hello.value)
-})
 </script>
 <style scoped>
-:slotted(.inline) {
+/* :slotted(.inline) {
     transition: 300ms;
     border-radius: 0;
     border-bottom: 1px solid transparent;
@@ -40,7 +35,7 @@ onMounted(() => {
     font-size: 20px;
     margin: 5px;
     color: var(--blue-lighten-1);
-}
+} */
 
 
 
@@ -75,25 +70,25 @@ onMounted(() => {
     color: white;
 }
 
-.routers {
+/* .routers {
     background: black;
     border-radius: 5px;
     color: white;
-}
+} */
 .header,.routers{
     z-index: 2;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    :slotted(.disabled),
+    /* :slotted(.disabled),
     :slotted(.inline) {
         font-size: 16px;
     }
 
     :slotted(.title) {
         font-size: 26px;
-    }
+    } */
 
     .media {
         height: 180px;
@@ -103,14 +98,14 @@ onMounted(() => {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    :slotted(.disabled),
+    /* :slotted(.disabled),
     :slotted(.inline) {
         font-size: 12px;
     }
 
     :slotted(.title) {
         font-size: 20px;
-    }
+    } */
 
     .media {
         height: 160px;
@@ -122,14 +117,14 @@ onMounted(() => {
 
 @media (max-width: 767px) {
 
-    :slotted(.disabled),
+    /* :slotted(.disabled),
     :slotted(.inline) {
         font-size: 12px;
     }
 
     :slotted(.title) {
         font-size: 16px;
-    }
+    } */
 
     .media {
         height: 140px;
