@@ -3,9 +3,9 @@
         <div class="header">
             <slot name="header"></slot>
         </div>
-        <div class="routers" ref="hello">
+        <!-- <div class="routers" ref="hello">
             <slot name="router"></slot>
-        </div>
+        </div> -->
     </div>
 </template>
 <script setup>
