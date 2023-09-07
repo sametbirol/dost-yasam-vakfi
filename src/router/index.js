@@ -54,7 +54,7 @@ const router = createRouter({
    routes
 })
 router.beforeEach((to,from,next) => {
-   document.title = to.meta.title;
+   document.title = `${to.meta.title} - Dost Yaşam Vakfı`;
    next();
 })
 export default router
