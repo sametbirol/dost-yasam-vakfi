@@ -56,11 +56,6 @@ const founders = [
         founderName: "Samet Birol",
         role: "Sekreter"
     },
-    {
-        image: "https://freerangestock.com/sample/120140/business-man-profile-vector.jpg",
-        founderName: "Samet Birol",
-        role: "Sekreter"
-    }
 ]
 
 const trustees = [
