@@ -1,17 +1,19 @@
 <template>
-    <div>
-        <div class="subheader">{{ props.question }}</div>
-        <div class="text">{{ props.answer }}</div>
+    <div class="container">
+        <div class="text">{{ props.question }}</div>
+        <div class="footer">{{ props.answer }}</div>
     </div>
 </template>
 <style scoped>
-.text {
+.text,.footer {
     font-family: 'Spline Sans Mono', monospace;
 }
 
-.subheader {
-    font-family: 'Spline Sans Mono', monospace;
-    font-size: var(--base-font-size);
+.container{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px;
+    width: 400px;
 }
 </style>
 <script setup>

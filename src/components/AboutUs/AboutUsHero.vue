@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <img src="../../assets/media/handshakelight.svg" width="64" height="64" />
-        <p class="text">Dost Yaşam Vakfı, Yardım Eli
+        <p class="header">Dost Yaşam Vakfı, Yardım Eli
         </p>
         <RouterLink to="/bagis-yap" class="inline">
-            <DonationButton>Bağış Yap</DonationButton>
+            <DonationButton></DonationButton>
         </RouterLink>
     </div>
 </template>
@@ -12,9 +12,7 @@
 import DonationButton from '../Donation/DonationButton.vue';
 </script>
 <style scoped>
-
-.text {
-    font-size: var(--header-size-xl);
+.header {
     font-family: 'Electrolize', sans-serif;
 }
 

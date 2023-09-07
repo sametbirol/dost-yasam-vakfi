@@ -10,11 +10,7 @@
         </div>
     </div>
 </template>
-<script setup>
-</script>
 <style scoped>
-
-
 .footer {
     padding-left: 24px;
     font-style: italic;
@@ -25,7 +21,7 @@
     align-items: flex-start;
     flex-direction: column;
     color: var(--blue-lighten-1);
-    padding: 160px;
+    gap:20px;
     font-family: 'Electrolize', sans-serif;
 }
 

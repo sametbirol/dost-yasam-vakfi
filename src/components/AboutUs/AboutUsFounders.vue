@@ -140,19 +140,12 @@ const trustees = [
 
 .footer {
     font-style: italic;
-    padding-left: 24px;
-    width: 70%;
-    text-align: center;
 }
 
 .container {
-    width: 80%;
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
     color: var(--blue-lighten-1);
-    /* font-family: 'Electrolize', sans-serif; */
     color: var(--blue-darken-1);
     padding: 100px 0 100px 0;
     gap: 20px;
@@ -173,6 +166,7 @@ const trustees = [
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 50px;
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <div class="header">Sıkça Sorulan Sorular</div>
+            <div class="subheader">Sıkça Sorulan Sorular</div>
             <div class="questions">
                 <FAQProfile v-for="obj in objs" v-bind="obj"></FAQProfile>
             </div>
@@ -9,24 +9,20 @@
     </div>
 </template>
 <style scoped>
-.wrapper{
-    width: 100%;
-    background-color: var(--blue-lighten-2);
-    display: flex;
-    justify-content: center;
-    padding: 120px;
-}
 .container{
-    width: 80%;
+    flex-direction: column;
 }
-.header {
-    width: 100%;
+.wrapper{
+    background-color: var(--blue-lighten-2);
+}
+.subheader {
     font-family: 'Spline Sans Mono', monospace;
-    font-size: var(--base-subheader-size);
 }
 
 .questions {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 </style>
 <script setup>

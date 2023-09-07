@@ -1,8 +1,8 @@
 <template>
     <div class="activity">
         <div class="activityPhoto"></div>
-        <div class="activityName">{{ props.activityName }}</div>
-        <div class="description">{{ props.description }}</div>
+        <div class="activityName subheader">{{ props.activityName }}</div>
+        <div class="description footer">{{ props.description }}</div>
     </div>
 </template>
 <script setup>
@@ -33,14 +33,14 @@ const props = defineProps({
 }
 .activityName{
     width: 80%;
-    font-size: var(--subheader-size-medium);
     font-family: "Elsie";
     padding-left: 8px;
 }
 .description{
-    width: 60%;
+
     font-weight: 600;
     text-align:left ;
     padding-left: 16px;
+    font-style: unset;
 }
 </style>

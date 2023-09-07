@@ -1,6 +1,6 @@
 <template>
     <button class="btn" @click="handleScrollDown">
-        <slot>Donate Now</slot>
+        <div class="text">Bağış Yap</div>
     </button>
 </template>
 <script setup>
@@ -39,7 +39,6 @@ const handleScrollDown = () => {
     .btn {
         padding: 12px;
         border-radius: 28px;
-        font-size: 20px;
     }
 
 }
@@ -49,7 +48,6 @@ const handleScrollDown = () => {
     .btn {
         padding: 8px;
         border-radius: 24px;
-        font-size: 16px;
     }
 
 }
@@ -59,7 +57,6 @@ const handleScrollDown = () => {
     .btn {
         padding: 8px;
         border-radius: 20px;
-        font-size: 14px;
     }
 
 

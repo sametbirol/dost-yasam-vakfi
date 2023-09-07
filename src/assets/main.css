@@ -11,18 +11,12 @@
   align-items: center;
   min-height: 100vh;
 }
-
-
-
-
-a{
+a {
   text-decoration: none;
   color: var(--blue-darken-3);
   transition: 0.4s;
   border-radius: 12px;
 }
-
-
 @media (hover: hover) {
   a:hover {
     background-color: var(--pink-pastel-color-2);
@@ -31,23 +25,34 @@ a{
   }
 }
 
-.wrapper{
+.wrapper {
   padding: 32px;
   display: grid;
   place-items: center;
   width: 100%;
 }
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  font-style: italic;
+}
+
 @media (min-width: 1281px) {
   .header {
     font-size: var(--header-size-xl);
   }
+
   .subheader {
     font-size: var(--subheader-size-xl);
   }
@@ -55,13 +60,16 @@ a{
   .footer {
     font-size: var(--footer-size-xl)
   }
+
   .text {
     font-size: var(--font-size-xl)
   }
-  .container{
+
+  .container {
     width: 80%;
   }
-  a{
+
+  a {
     font-size: var(--footer-size-xl);
   }
 
@@ -79,13 +87,16 @@ a{
   .footer {
     font-size: var(--footer-size-large)
   }
+
   .text {
     font-size: var(--font-size-large)
   }
-  .container{
+
+  .container {
     width: 85%;
   }
-  a{
+
+  a {
     font-size: var(--footer-size-large);
   }
 
@@ -103,13 +114,16 @@ a{
   .footer {
     font-size: var(--footer-size-medium)
   }
+
   .text {
     font-size: var(--font-size-medium)
   }
-  .container{
+
+  .container {
     width: 90%;
   }
-  a{
+
+  a {
     font-size: var(--footer-size-medium);
   }
 }
@@ -126,13 +140,16 @@ a{
   .footer {
     font-size: var(--footer-size-small)
   }
+
   .text {
     font-size: var(--font-size-small)
   }
-  .container{
+
+  .container {
     width: 95%;
   }
-  a{
+
+  a {
     font-size: var(--footer-size-small);
   }
 

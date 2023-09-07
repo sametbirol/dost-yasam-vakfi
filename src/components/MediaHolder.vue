@@ -1,10 +1,6 @@
 <template>
     <div class="media">
-        <div class="header" v-html="props.header">
-        </div>
-        <!-- <div class="routers" ref="hello">
-            <slot name="router"></slot>
-        </div> -->
+        <slot></slot>
     </div>
 </template>
 <script setup>
@@ -52,6 +48,7 @@ const props = defineProps({
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .media:before {
@@ -66,9 +63,11 @@ const props = defineProps({
     background: rgba(0, 0, 0, 0.5);
     /* transition: all .2s linear; */
 }
-.header {
+:slotted(.header) {
     color: white;
     font-family: 'Electrolize', sans-serif;
+    z-index: 1;
+    padding: 24px;
 }
 
 /* .routers {
