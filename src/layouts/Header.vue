@@ -1,17 +1,15 @@
 <template>
     <div class="wrapper">
-        <div class="header">
+        <div class="container">
             <MediaLogo></MediaLogo>
-            <RouterLink to="/">Anasayfa</RouterLink>
-            <RouterLink to="/hakkimizda">Hakkımızda</RouterLink>
-            <RouterLink to="/bilgi-kosesi">Bilgi Köşesi</RouterLink>
-            <RouterLink to="/bagis-yap">Destek / Bağış</RouterLink>
-            <RouterLink to="/etkinliklerimiz">Etkinlik</RouterLink>
+            <Menu></Menu>
+            
         </div>
     </div>
 </template>
 <script setup>
 import MediaLogo from '@/components/MediaLogo.vue'
+import Menu from '../components/NavigationMenu/Menu.vue';
 </script>
 
 
@@ -19,54 +17,15 @@ import MediaLogo from '@/components/MediaLogo.vue'
 <style scoped>
 .wrapper {
     background-color: var(--blue-lighten-2);
+    min-height: 9vh;
     padding: 0;
 }
 
-.header {
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
+.container {
+    justify-content: space-between;
     gap: 20px;
-    align-items: center;
+    flex-wrap: nowrap;
 }
 
-.header>* {
-    padding: 8px;
-    margin: 16px;
-}
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    .header {
-        gap: 10px;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .header {
-        gap: 0;
-        width:95%;
-    }
-
-    .header>a {
-        padding:4px;
-        margin: 0;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    .header {
-        gap: 0;
-        width:99%;
-    }
-
-    .header>a {
-        padding:4px;
-        margin: 0;
-    }
-
-}</style>
+</style>
