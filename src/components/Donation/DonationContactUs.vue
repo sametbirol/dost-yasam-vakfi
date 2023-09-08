@@ -28,13 +28,7 @@ import MediaLogo from '../MediaLogo.vue'
 </script>
 <style scoped>
 .wrapper {
-    width: 100%;
     background-color: var(--light-color);
-    min-height: 20vh;
-    display: grid;
-    place-items: center;
-    
-
 }
 
 .container {
@@ -45,6 +39,7 @@ import MediaLogo from '../MediaLogo.vue'
 
 .container>div:last-child {
     align-self: center;
+    flex: 1 0 auto;
 }
 
 .header {
@@ -60,8 +55,8 @@ import MediaLogo from '../MediaLogo.vue'
     border: 3px solid black;
     display: flex;
     justify-content: space-between;
-    padding: 48px;
-    gap: 128px;
+    padding: 24px;
+    gap: 64px;
     flex-wrap: wrap;
 }
 
