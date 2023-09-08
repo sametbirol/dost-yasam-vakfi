@@ -17,7 +17,7 @@
 .logos {
     display: flex;
     gap: 20px;
-    flex: 1;
+    flex: 0 1 auto;
 }
 
 /* .logos>a>img {
