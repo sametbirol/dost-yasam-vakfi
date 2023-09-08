@@ -1,12 +1,16 @@
 <template>
     <div class="activity">
-        <div class="activityPhoto"></div>
+        <img class="activityPhoto" loading="lazy"/>
         <div class="activityName subheader">{{ props.activityName }}</div>
         <div class="description footer">{{ props.description }}</div>
     </div>
 </template>
 <script setup>
 const props = defineProps({
+    imageURL : {
+        type : String,
+        default : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/512px-Solid_red.svg.png?20150316143248"
+    },
     activityName: {
         type: String,
         default: "Activity",
@@ -28,8 +32,11 @@ const props = defineProps({
 .activityPhoto {
     width: 500px;
     height: 500px;
-    background-color: black;
-    border-radius: 40px;
+    background-color: var(--blue--darken-2);
+    border-radius: 48px;
+    background-image: v-bind("props.imageURL");
+    background-size: cover;
+    background-position: center;
 }
 .activityName{
     width: 80%;
