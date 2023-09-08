@@ -26,7 +26,6 @@ a {
 }
 
 .wrapper {
-  padding: 32px;
   display: grid;
   place-items: center;
   width: 100%;
@@ -46,6 +45,7 @@ a {
 
 .footer {
   font-style: italic;
+  white-space: pre-wrap;
 }
 
 @media (min-width: 1281px) {
@@ -67,6 +67,9 @@ a {
 
   .container {
     width: 80%;
+  }
+  .wrapper {
+    padding: 32px;
   }
 
   a {
@@ -95,6 +98,9 @@ a {
   .container {
     width: 85%;
   }
+  .wrapper {
+    padding: 24px;
+  }
 
   a {
     font-size: var(--footer-size-large);
@@ -122,6 +128,9 @@ a {
   .container {
     width: 90%;
   }
+  .wrapper {
+    padding: 16px;
+  }
 
   a {
     font-size: var(--footer-size-medium);
@@ -147,6 +156,9 @@ a {
 
   .container {
     width: 95%;
+  }
+  .wrapper {
+    padding: 8px;
   }
 
   a {
