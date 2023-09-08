@@ -2,9 +2,9 @@
     <div class="routers">
         <RouterLink to="/">Anasayfa</RouterLink>
         <RouterLink to="/hakkimizda">Hakkımızda</RouterLink>
+        <RouterLink to="/etkinlikler">Etkinlikler</RouterLink>
         <RouterLink to="/bilgi-kosesi">Bilgi Köşesi</RouterLink>
         <RouterLink to="/bagis-yap">Destek / Bağış</RouterLink>
-        <RouterLink to="/etkinliklerimiz">Etkinlik</RouterLink>
     </div>
     <div class="menu">
         <i class="fa fa-bars" width="30" height="30"></i>

@@ -40,7 +40,7 @@ const routes = [
       }
    },
    {
-      path: '/etkinliklerimiz',
+      path: '/etkinlikler',
       name: 'Events',
       component: EventsView,
       meta : {
