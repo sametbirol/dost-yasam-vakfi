@@ -4,7 +4,7 @@
             <h2 class="subheader">Değişime Sebep Ol</h2>
             <p class="info">"Bağışlarınız, Down Sendromlu insanların hayatlarında büyük bir fark yaratabilir. Sadece yaşam
                 kalitelerini artırmakla kalmaz, aynı zamanda sahip olduklarıni bile bilmedikleri olanakları sağlar!"</p>
-            <div class="stats container">
+            <div class="stats">
                 <div>
                     <h3 class="subheader">{{ families }}</h3>
                     <p>Aileye yardım edildi</p>
@@ -65,8 +65,11 @@ animateValue(funds, 0, FUNDS_LIMIT, 1000)
 }
 
 .stats {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 10px;
 }
 
