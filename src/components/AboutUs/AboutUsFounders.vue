@@ -2,17 +2,18 @@
     <div class="wrapper">
         <div class="container">
 
-            <div class="header">Kurucular</div>
-            <div class="footer">"Dost Yaşam Vakfı'nın başarılı ve tecrübeli kurucu ekibi, fark yaratmayı hedefliyor."</div>
+            <div class="header">Mütevelli Heyeti</div>
+            <div class="founders">
+                <TrusteesProfile v-for="trustee in trustees" v-bind="trustee"></TrusteesProfile>
+            </div>
+            <div class="footer">"Dost Yaşam Vakfı'nın başarılı ve tecrübeli ekibi, fark yaratmayı hedefliyor."</div>
 
+            <div class="header">Yönetim Kurulu</div>
             <div class="founders">
                 <FounderProfile v-for="founder in founders" v-bind="founder"></FounderProfile>
             </div>
 
-            <div class="header">Mütevelli Heyetimiz</div>
-            <div class="founders">
-                <TrusteesProfile v-for="trustee in trustees" v-bind="trustee"></TrusteesProfile>
-            </div>
+
         </div>
     </div>
 </template>
@@ -168,5 +169,4 @@ const trustees = [
     gap: 30px;
     padding-bottom: 50px;
 }
-
 </style>
