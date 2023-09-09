@@ -31,6 +31,7 @@ const callback = () => {
 }
 const onClickOutsideHandler = [
     (ev) => {
+        if(!isActive.value) return;
         console.log(ev)
         isActive.value = false;
     },
