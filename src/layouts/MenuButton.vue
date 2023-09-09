@@ -36,6 +36,7 @@ const handleMenu = () => {
     align-items: center;
     width: 35px;
     height: 21px;
+    padding-right: 24px;
 }
 
 .menuButton:hover {
