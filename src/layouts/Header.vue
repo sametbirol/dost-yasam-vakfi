@@ -1,7 +1,9 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <MediaLogo></MediaLogo>
+            <div class="mobile-inactive"><MediaLogo></MediaLogo></div>
+            <div class="mobile-active"></div>
+            <!-- <logo></logo> -->
             <Menu></Menu>
             
         </div>
