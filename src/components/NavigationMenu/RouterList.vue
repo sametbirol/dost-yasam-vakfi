@@ -16,9 +16,11 @@
 .routers {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
-.excat-active{
-    background-color: red;
+.exact-active{
+    background-color: var(--pink-pastel-color);
+    padding: 12px;
 }
 
 
