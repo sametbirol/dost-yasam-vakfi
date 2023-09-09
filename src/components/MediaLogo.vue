@@ -17,7 +17,7 @@
 .logos {
     display: flex;
     gap: 20px;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 
 /* .logos>a>img {
@@ -38,8 +38,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .logos>a>img {
-        width: 18px;
-        height: 18px;
+        width: 24px;
+        height: 24px;
     }
 
 }
@@ -47,8 +47,8 @@
 @media (max-width: 767px) {
 
     .logos>a>img {
-        width: 12px;
-        height: 12px;
+        width: 16px;
+        height: 16px;
     }
 
 }</style>
