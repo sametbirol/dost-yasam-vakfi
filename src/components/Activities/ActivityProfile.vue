@@ -81,4 +81,12 @@ const props = defineProps({
         border-radius: 24px;
     }
 }
+
+@media (max-width: 480px) {
+    .activityPhoto {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+    }
+}
 </style>
