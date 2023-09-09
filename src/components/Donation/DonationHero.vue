@@ -3,7 +3,7 @@
         <div class="container">
             <div class="head">
                 <h2 class="header">Bize KATIL</h2>
-                <DonationButton color="white" bgcolor="black" ></DonationButton>
+                <DonationButton color="white" bgcolor="black"></DonationButton>
             </div>
             <div class="grid">
                 <div class="content bottom-left-long top-right-long col-span-2"></div>
@@ -24,7 +24,7 @@ import DonationButton from '../Donation/DonationButton.vue';
 .wrapper {
     height: 670px;
     background-color: var(--pink-pastel-color);
-}   
+}
 
 .container {
     justify-content: space-around;
@@ -118,10 +118,6 @@ import DonationButton from '../Donation/DonationButton.vue';
     background-image: url(https://media.istockphoto.com/id/482247210/tr/foto%C4%9Fraf/young-girl-smiling-on-background-of-blue-wall.jpg?s=612x612&w=0&k=20&c=XSDVKVb9wrPH9w_zz6hsmAsGJy77vwPB7YrgefsP7dw=);
 }
 
-.header {
-    font-size: var(--header-size-xl);
-}
-
 @media (min-width: 1025px) and (max-width: 1280px) {
 
     .grid {
@@ -130,9 +126,6 @@ import DonationButton from '../Donation/DonationButton.vue';
         gap: 15px;
     }
 
-    .header {
-        font-size: var(--header-size-large);
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -147,18 +140,15 @@ import DonationButton from '../Donation/DonationButton.vue';
         align-items: center;
     }
 
-    .header {
-        font-size: var(--header-size-medium);
-    }
 
 
-    .hero-wrapper {
+    .container {
         flex-direction: column;
     }
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
 
     .grid {
         height: 330px;
@@ -170,11 +160,26 @@ import DonationButton from '../Donation/DonationButton.vue';
         align-items: center;
     }
 
-    .header {
-        font-size: var(--header-size-small);
+
+    .container {
+        flex-direction: column;
     }
 
-    .hero-wrapper {
+}
+
+@media (max-width: 480px) {
+    .grid {
+        height: 270px;
+        width: 270px;
+        gap: 8px;
+    }
+
+    .head {
+        align-items: center;
+    }
+
+
+    .container {
         flex-direction: column;
     }
 
