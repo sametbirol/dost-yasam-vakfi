@@ -6,7 +6,7 @@
 </template>
 <script setup>
 import RouterList from './RouterList.vue';
-import MediaLogo from '../MediaLogo.vue';
+import MediaLogo from '@/components/MediaLogo.vue'
 import {ref} from 'vue';
 </script>
 <style scoped>
