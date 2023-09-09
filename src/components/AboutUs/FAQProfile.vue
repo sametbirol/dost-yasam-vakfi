@@ -13,7 +13,6 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 12px;
-    width: 400px;
 }
 </style>
 <script setup>
