@@ -19,7 +19,8 @@
     align-items: center;
 }
 .exact-active{
-    background-color: var(--pink-pastel-color);
+    background-color: var(--blue-darken-3);
+    color:var(--blue-lighten-2);
     padding: 12px;
 }
 
