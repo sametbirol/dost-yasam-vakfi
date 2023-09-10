@@ -1,56 +1,64 @@
 <template>
-    <div class="wrapper">
+    <div :class="isHeaderScrolled">
         <div class="container">
-            <div v-if="isMobile">
+            <!-- <div v-if="isMobile">
                 <MediaLogo></MediaLogo>
             </div>
-            <div v-else></div>
-            <!-- <logo></logo> -->
+            <div v-else></div> -->
+            <img src="../assets/media/small-logo.svg">
             <div v-if="isMobile">
                 <RouterList></RouterList>
             </div>
             <div v-else>
-                <MenuButton @menu-toggle="callback" ref="ignoredButton" :class="isActive ? `active` : ``"></MenuButton>
-                <MenuDropdown v-on-click-outside="onClickOutsideHandler" :class="isActive ? `active` : ``"></MenuDropdown>
+                <MenuButton @menu-toggle="menuToggleCallback" ref="ignoredButton" :class="isMenuActive"></MenuButton>
+                <MenuDropdown v-on-click-outside="onClickOutsideHandler" :class="isMenuActive"></MenuDropdown>
             </div>
 
         </div>
     </div>
 </template>
 <script setup>
-import MediaLogo from '@/components/MediaLogo.vue'
 import MenuButton from './MenuButton.vue'
 import RouterList from './RouterList.vue'
 import MenuDropdown from './MenuDropdown.vue'
 import { vOnClickOutside } from '@vueuse/components'
-import { ref, onUnmounted, onMounted, computed } from 'vue';
+import { ref, onUnmounted, onMounted, computed, onUpdated } from 'vue';
 const ignoredButton = ref(null)
 const isActive = ref(false)
-const callback = () => {
+const menuToggleCallback = () => {
     isActive.value = !isActive.value
 }
 const onClickOutsideHandler = [
-    (ev) => {
-        if(!isActive.value) return;
-        console.log(ev)
+    () => {
+        if (!isActive.value) return;
         isActive.value = false;
     },
     { ignore: [ignoredButton] }
 ]
-const isMobile = computed(() => {
-    return screenWidth.value >= 767;
+const isMenuActive = computed(() => {
+    return isActive.value ? 'active' : '';
 })
 const screenWidth = ref(window.innerWidth)
+const scrollHeight = ref(window.scrollY)
 const updateScreenWidth = () => {
     screenWidth.value = window.innerWidth;
 };
+const updateScrollHeight = () => {
+    scrollHeight.value = window.scrollY;
+};
+const isMobile = computed(() => {
+    return screenWidth.value >= 767 ? true : false;
+})
+const isHeaderScrolled = computed(() => {
+    return scrollHeight.value < 150 ? 'wrapper' : 'wrapper active';
+})
 onMounted(() => {
     window.addEventListener('resize', updateScreenWidth);
+    window.addEventListener('scroll', updateScrollHeight)
 });
-
-// Remove event listeners when the component is unmounted
 onUnmounted(() => {
     window.removeEventListener('resize', updateScreenWidth);
+    window.removeEventListener('scroll', updateScrollHeight)
 });
 </script>
 
@@ -61,11 +69,35 @@ onUnmounted(() => {
     background-color: var(--blue-lighten-2);
     min-height: 9vh;
     padding: 0;
+    z-index: 2;
+    transition: position 2s linear;
+
+}
+
+.wrapper.active {
+    top: 0;
+    position: sticky;
+    transition: top 2s linear;
+}
+
+.wrapper.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 10px -5px 10px 10px var(--blue-darken-2);
+
 }
 
 .container {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: nowrap;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 </style>
