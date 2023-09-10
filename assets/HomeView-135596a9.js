@@ -1,1 +1,0 @@
-import{M as e,i as a}from"./default-baby-528afcfe.js";import{o,c as r,a as s,u as t,F as n,b as c}from"./index-a75fcf94.js";const l=c("div",null,"Anasayfa",-1),p={__name:"HomeView",setup(m){return(i,u)=>(o(),r(n,null,[s(e,{image:`url(${t(a)})`},null,8,["image"]),l],64))}};export{p as default};
