@@ -1,0 +1,1 @@
+import{_ as t,h as o,o as _,c,i as d}from"./index-c2c02853.js";const r={class:"media"},i={__name:"MediaHolder",props:{image:String,header:String},setup(s){const a=s;return o(e=>({"760acc98":a.image})),(e,n)=>(_(),c("div",r,[d(e.$slots,"default")]))}},p=t(i,[["__scopeId","data-v-7d8042e1"]]),m="/dost-yasam-vakfi/assets/default-baby-59ce2513.jpg";export{p as M,m as i};
