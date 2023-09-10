@@ -31,4 +31,15 @@ import {ref} from 'vue';
 .float.active{
     transform: translateX(0);
 }
+.float.active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow:-5px 0 10px 10px var(--blue-darken-2);
+}
 </style>
