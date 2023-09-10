@@ -23,21 +23,26 @@ import RouterList from './RouterList.vue'
 import MenuDropdown from './MenuDropdown.vue'
 import { vOnClickOutside } from '@vueuse/components'
 import { ref, onUnmounted, onMounted, computed, onUpdated } from 'vue';
+
+
 const ignoredButton = ref(null)
 const isActive = ref(false)
 const menuToggleCallback = () => {
     isActive.value = !isActive.value
 }
+const menuCloseCallback = () => {
+    if (!isActive.value) return;
+    isActive.value = false;
+}
 const onClickOutsideHandler = [
-    () => {
-        if (!isActive.value) return;
-        isActive.value = false;
-    },
+    menuCloseCallback,
     { ignore: [ignoredButton] }
 ]
 const isMenuActive = computed(() => {
     return isActive.value ? 'active' : '';
 })
+
+
 const screenWidth = ref(window.innerWidth)
 const scrollHeight = ref(window.scrollY)
 const updateScreenWidth = () => {
@@ -50,15 +55,17 @@ const isMobile = computed(() => {
     return screenWidth.value >= 767 ? true : false;
 })
 const isHeaderScrolled = computed(() => {
-    return scrollHeight.value < 150 ? 'wrapper' : 'wrapper active';
+    return scrollHeight.value < 75 ? 'wrapper' : 'wrapper active';
 })
 onMounted(() => {
     window.addEventListener('resize', updateScreenWidth);
     window.addEventListener('scroll', updateScrollHeight)
+    window.addEventListener('touchmove', menuCloseCallback)
 });
 onUnmounted(() => {
     window.removeEventListener('resize', updateScreenWidth);
     window.removeEventListener('scroll', updateScrollHeight)
+    window.removeEventListener('touchmove', menuCloseCallback)
 });
 </script>
 
