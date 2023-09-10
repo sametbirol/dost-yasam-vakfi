@@ -19,9 +19,10 @@
     </div>
 </template>
 <script setup>
-import { useRoute } from 'vue-router'
+import { useRoute,useRouter } from 'vue-router'
 import { computed } from 'vue'
 const route = useRoute()
+const router = useRouter()
 const props = defineProps({
     objSet: {
         default: []
@@ -81,6 +82,7 @@ const objToRender = computed(() => {
     if (resultList.length) {
         return resultList[0]
     }
+    router.push({ name: 'content', params: { title: objs[0].path } })
     return objs[0]
 })
 </script>
