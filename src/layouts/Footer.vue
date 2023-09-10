@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <img src="../assets/media/heart.svg" height="96" width="96">
+    <img src="../assets/media/logo.svg" height="96" width="96">
     <p class="footer">
       Bu sitenin içeriği ziyaretçilerini bilgilendirmeye
       yönelik hazırlanmış olup tıbbi teşhis, tedavi veya reçete bilgisi özelliği taşımaz.
@@ -14,7 +14,8 @@
 </script>
 <style scoped>
 .wrapper {
-  background-color: var(--blue-lighten-1);
+  background-color: var(--blue-lighten-0);
   font-family: 'Spline Sans Mono', monospace;
+  color : var(--blue-darken-2)
 }
 </style>
