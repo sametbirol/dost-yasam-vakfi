@@ -50,12 +50,13 @@ const updateScreenWidth = () => {
 };
 const updateScrollHeight = () => {
     scrollHeight.value = window.scrollY;
+    menuCloseCallback()
 };
 const isMobile = computed(() => {
     return screenWidth.value >= 767 ? true : false;
 })
 const isHeaderScrolled = computed(() => {
-    return scrollHeight.value < 75 ? 'wrapper' : 'wrapper active';
+    return scrollHeight.value < 60 ? 'wrapper' : 'wrapper active';
 })
 onMounted(() => {
     window.addEventListener('resize', updateScreenWidth);
