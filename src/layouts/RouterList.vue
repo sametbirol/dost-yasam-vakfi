@@ -1,16 +1,17 @@
 <template>
     <div class="routers">
-        <RouterLink exact-active-class="exact-active" to="/">Anasayfa</RouterLink>
-        <RouterLink exact-active-class="exact-active" to="/hakkimizda">Hakkımızda</RouterLink>
-        <RouterLink exact-active-class="exact-active" to="/etkinlikler">Etkinlikler</RouterLink>
-        <RouterLink exact-active-class="exact-active" to="/bilgi-kosesi">Bilgi Köşesi</RouterLink>
-        <RouterLink exact-active-class="exact-active" to="/bagis-yap">Destek / Bağış</RouterLink>
+        <RouterLink active-class="exact-active" to="/">Anasayfa</RouterLink>
+        <RouterLink active-class="exact-active" to="/hakkimizda">Hakkımızda</RouterLink>
+        <RouterLink active-class="exact-active" to="/etkinlikler">Etkinlikler</RouterLink>
+        <RouterLink active-class="exact-active" to="/bilgi-kosesi">Bilgi Köşesi</RouterLink>
+        <RouterLink active-class="exact-active" to="/bagis-yap">Destek / Bağış</RouterLink>
     </div>
 </template>
 <style scoped>
-.routers>* {
+.routers>a {
     padding: 8px;
     margin: 16px;
+    min-width: 100px;
 }
 
 .routers {
