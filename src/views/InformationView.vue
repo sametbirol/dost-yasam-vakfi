@@ -4,9 +4,10 @@
         Down Sendromu Hakkında
     </h1>        
     </MediaHolder>  
-    <div>Bilgi Köşesi</div>
+    <TabWrapper ></TabWrapper>
 </template>
 <script setup>
 import MediaHolder from '@/components/MediaHolder.vue'
 import image from '@/assets/media/default-baby.jpg'
+import TabWrapper from '../components/Information/TabWrapper.vue';
 </script>
