@@ -1,4 +1,4 @@
-import{_ as k,q as u,e as m,r as p,o as t,c as o,b as e,F as c,f as b,a as y}from"./index-ad519137.js";const v={class:"wrapper"},h={class:"container"},z={class:"left"},_=["innerHTML"],g={__name:"TabWrapper",props:{objSet:{default:[]},color:{type:String,default:"black"},bgcolor:{type:String,default:"white"}},setup(f){const s=u(),i=[{path:"down-sendromunun-belirtileri-nelerdir",title:"Down Sendromunun Belirtileri Nelerdir?",content:`
+import{_ as k,q as m,s as p,e as c,r as b,o as t,c as o,b as i,F as y,f as v,a as h}from"./index-a75fcf94.js";const z={class:"wrapper"},_={class:"container"},g={class:"left"},f=["innerHTML"],w={__name:"TabWrapper",props:{objSet:{default:[]},color:{type:String,default:"black"},bgcolor:{type:String,default:"white"}},setup(D){const s=m(),d=p(),e=[{path:"down-sendromunun-belirtileri-nelerdir",title:"Down Sendromunun Belirtileri Nelerdir?",content:`
         <div>Down sendromlu bireyler her ne kadar birbirine benzese de her birinin farklı kişisel ve fiziksel özellikleri olabilir. Genellikle hafif-orta derece zeka geriliğine sahiptirler ve yaşıtlarına göre daha geç konuşmaya başlarlar.</div>
         <div>Down sendromlu bireylerin benzer fiziksel özellikleri aşağıdaki gibi sıralanabilir:</div>
         <div>
@@ -25,6 +25,6 @@ import{_ as k,q as u,e as m,r as p,o as t,c as o,b as e,F as c,f as b,a as y}fro
                 <li><span style="font-weight:700">Mozaik Down Sendromu:</span> En az bulunan tiptir. Down sendromlu bireylerin %2’si mozaiktir. Mozaik karışım veya kombinasyon anlamına gelir. Bu durumda vücuttaki hücrelerin bir kısmı olması gerektiği gibi 21.kromozomdan iki kopya taşırken bazı hücreler fazladan bir 21.kromozoma sahiptir. Diğer Down sendromu tipleri ile benzer özellikler taşır ama semptomları çoğunlukla daha hafiftir.</li>
             </ul>        
         </div>
-        `}],r=m(()=>{const a=i.filter(l=>l.path==s.params.title);return a.length?a[0]:i[0]});return(a,l)=>{const d=p("RouterLink");return t(),o("div",v,[e("div",h,[e("div",z,[(t(),o(c,null,b(i,n=>e("li",null,[y(d,{"exact-active-class":"exact-active",to:{name:"content",params:{title:n.path}},innerHTML:n.title},null,8,["to","innerHTML"])])),64))]),e("p",{class:"right text",innerHTML:`
+        `}],r=c(()=>{const a=e.filter(l=>l.path==s.params.title);return a.length?a[0]:(d.push({name:"content",params:{title:e[0].path}}),e[0])});return(a,l)=>{const u=b("RouterLink");return t(),o("div",z,[i("div",_,[i("div",g,[(t(),o(y,null,v(e,n=>i("li",null,[h(u,{"exact-active-class":"exact-active",to:{name:"content",params:{title:n.path}},innerHTML:n.title},null,8,["to","innerHTML"])])),64))]),i("p",{class:"right text",innerHTML:`
                 <h1 style="color:#0353a4;">${r.value.title}</h1>${r.value.content}
-            `},null,8,_)])])}}},D=k(g,[["__scopeId","data-v-c6094428"]]);export{D as default};
+            `},null,8,f)])])}}},L=k(w,[["__scopeId","data-v-0cb93929"]]);export{L as default};
