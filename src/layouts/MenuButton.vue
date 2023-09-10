@@ -5,11 +5,7 @@
         <div class="bottom"></div>
     </button>
 </template>
-<script setup>
-const handleMenu = () => {
-    console.log("hello")
-}
-</script>
+
 <style scoped>
 * {
     user-select: none;
@@ -36,7 +32,7 @@ const handleMenu = () => {
     align-items: center;
     width: 35px;
     height: 21px;
-    padding-right: 24px;
+    /* padding-right: 24px; */
 }
 
 .menuButton:hover {
