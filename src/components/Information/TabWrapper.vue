@@ -3,7 +3,7 @@
         <div class="container">
             <div class="left">
                 <li v-for="obj in objs">
-                    <RouterLink exact-active-class="exact-active" :to="{
+                    <RouterLink class="text" exact-active-class="exact-active" :to="{
                         name: 'content',
                         params: {
                             title: obj.path
@@ -19,7 +19,7 @@
     </div>
 </template>
 <script setup>
-import { useRoute,useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { computed } from 'vue'
 const route = useRoute()
 const router = useRouter()
@@ -97,7 +97,7 @@ const objToRender = computed(() => {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 90%;
+    gap: 20px;
 }
 
 .left {
@@ -107,71 +107,55 @@ const objToRender = computed(() => {
     align-items: flex-start;
     /* width: 400px; */
     /* width: 30%; */
-    gap:20px;
-    padding: 24px;
+    gap: 24px;
+    padding: 12px;
     flex: 0 0 auto;
 }
+
 .left a {
     padding: 12px;
-    /* flex: 1 0 auto; */
+}
 
+.left li {
+    white-space: nowrap;
 }
 
 .right {
     background-color: var(--blue-lighten-0);
-    /* white-space: pre-wrap; */
-    padding: 30px;
+    padding: 24px;
     border-radius: 30px;
-    /* width: 70%; */
-    /* width: 100%; */
-    /* height: 100%; */
     flex: 0 1 auto;
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap: 24px;
 }
-.right>h1{
+
+.right>h1 {
     color: var(--blue-lighten-2);
 }
 
 .exact-active {
     background-color: var(--blue-darken-2);
-    color:var(--blue-lighten-1)
+    color: var(--blue-lighten-1)
 }
-@media (min-width: 1025px) and (max-width: 1280px) {
 
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-.container {
-    flex-direction: column;
-}
-
+    .container {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-.grid {
-    height: 330px;
-    width: 330px;
-    gap: 10px;
-}
-
-
-.container {
-    flex-direction: column;
-}
-
+    .container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
-
-
-.container {
-    flex-direction: column;
-}
-
+    .container {
+        flex-direction: column;
+    }
 }
 </style>
