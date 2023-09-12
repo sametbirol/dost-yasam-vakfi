@@ -1,7 +1,7 @@
 <template>
-    <div class="profile">
-        <img :src="props.image" class="photo">
-        <div class="container">
+    <div class="profile normal-logo">
+        <img :src="props.image" class="photo small-logo">
+        <div class="containerr">
             <div class="founderName text">{{ founderNametoUpperCase }}</div>
             <div class="footer">{{ roletoUpperCase }}</div>
         </div>
@@ -26,28 +26,31 @@ const roletoUpperCase = computed(() => {
 </script>
 <style scoped>
 .profile {
-    width: 300px;
-    min-width: 200px;
-    height: 300px;
+    aspect-ratio: 1/1;
+
+    gap: 24px;
     border-radius: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     background-color: var(--blue-lighten-2);
     color: var(--blue-darken-1);
-    gap: 30px;
 }
 
 .photo {
     background-color: black;
-    width: 96px;
-    height: 96px;
+    aspect-ratio: 1 / 1;
     border-radius: 48px;
 }
-.container{
+
+.containerr {
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    padding: 24px;
+    align-items: center;
+    /* padding: 12px; */
     background-color: var(--blue-lighten-1);
     border-radius: 12px;
 }

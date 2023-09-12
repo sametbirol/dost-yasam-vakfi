@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <div class="founderName">{{ founderNametoUpperCase }}</div>
+        <div class="founderName text">{{ founderNametoUpperCase }}</div>
         <div class="role">{{ roletoUpperCase }}</div>
     </div>
 </template>
@@ -19,9 +19,9 @@ const roletoUpperCase = computed(() => {
 </script>
 <style scoped>
 .profile {
-    width: 300px;
-    min-width: 100px;
-    height: 100px;
+    /* width: 300px; */
+    min-width: 150px;
+    height: 80px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -35,6 +35,5 @@ const roletoUpperCase = computed(() => {
 .founderName {
     text-align: center;
     font-family: "Electrolise";
-    font-size: var(--font-size-xl);
 }
 </style>
