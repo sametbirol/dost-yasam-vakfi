@@ -5,13 +5,14 @@
                 <MediaLogo></MediaLogo>
             </div>
             <div v-else></div> -->
-            <img src="../assets/media/small-logo.svg">
+            <img src="../assets/media/small-logo.svg" class="small-logo">
+
             <div v-if="isMobile">
-                <RouterList></RouterList>
-            </div>
-            <div v-else>
                 <MenuButton @menu-toggle="menuToggleCallback" ref="ignoredButton" :class="isMenuActive"></MenuButton>
                 <MenuDropdown v-on-click-outside="onClickOutsideHandler" :class="isMenuActive"></MenuDropdown>
+            </div>
+            <div v-else>
+                <RouterList></RouterList>
             </div>
 
         </div>
@@ -53,7 +54,7 @@ const updateScrollHeight = () => {
     menuCloseCallback()
 };
 const isMobile = computed(() => {
-    return screenWidth.value >= 767 ? true : false;
+    return screenWidth.value < 768 ? true : false;
 })
 const isHeaderScrolled = computed(() => {
     return scrollHeight.value < 60 ? 'wrapper' : 'wrapper active';
@@ -97,7 +98,7 @@ onUnmounted(() => {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 10px -5px 10px 10px var(--blue-darken-2);
+    box-shadow: 0 -5px 10px 10px var(--blue-darken-2);
 
 }
 
