@@ -2,7 +2,7 @@
     <div class="activity">
         <img class="activityPhoto" loading="lazy" />
         <div class="subheader">{{ props.activityName }}</div>
-        <div class="footer">{{ props.description }}</div>
+        <div class="text">{{ props.description }}</div>
     </div>
 </template>
 <script setup>
