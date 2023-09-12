@@ -153,7 +153,7 @@ const trustees = [
 }
 
 .wrapper {
-    background-color: var(--blue-lighten-1);
+    background-color: var(--blue-lighten-0);
     width: 100%;
     display: flex;
     justify-content: center;
